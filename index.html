@@ -1,74 +1,48 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>نادي الموهوبين - اليوم الوطني</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثانوية عين جالوت - النادي والموهوبين</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-green-700 text-white font-sans">
+<body>
+    <!-- القسم الرئيسي -->
+    <header>
+        <h1>أهلاً بكم في ثانوية عين جالوت</h1>
+        <p>نادي الموهوبين وجمعية ريادة</p>
+    </header>
 
-  <!-- الهيدر -->
-  <header class="flex flex-col items-center py-12 bg-green-700 text-white">
-    <h1 class="text-5xl font-bold mb-2">نادي الموهوبين</h1>
-    <p class="text-2xl mb-6">ثانوية عين جالوت</p>
+    <!-- قسم الكلمات المتحركة -->
+    <section id="words-section">
+        <div class="moving-words">
+            <span>الإبداع</span>
+            <span>التفوق</span>
+            <span>الموهبة</span>
+            <span>التميز</span>
+        </div>
+    </section>
 
-    <div class="flex justify-center items-center gap-12">
-      <!-- شعار النادي -->
-      <div class="flex flex-col items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Logo_example.png/120px-Logo_example.png" alt="شعار نادي الموهوبين" class="w-24 h-24 mb-2">
-        <p>نادي الموهوبين</p>
-      </div>
+    <!-- آخر الصفحة -->
+    <footer>
+        <div class="logos">
+            <div class="logo-item">
+                <img src="images/reyada_logo.png" alt="جمعية ريادة">
+                <p>جمعية ريادة</p>
+            </div>
+            <div class="logo-item">
+                <img src="images/talents_logo.png" alt="نادي الموهوبين">
+                <p>نادي الموهوبين لثانوية عين جالوت</p>
+            </div>
+        </div>
+    </footer>
 
-      <!-- شعار جمعية ريادة -->
-      <div class="flex flex-col items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Example_logo.png/120px-Example_logo.png" alt="شعار جمعية ريادة" class="w-24 h-24 mb-2">
-        <p>جمعية ريادة</p>
-      </div>
-    </div>
+    <!-- نشيد وطني -->
+    <audio id="nationalAnthem" controls autoplay loop>
+        <source src="images/national_anthem.mp3" type="audio/mpeg">
+        المتصفح لا يدعم تشغيل الصوت
+    </audio>
 
-    <!-- صورة الولد الكرتوني الوطني -->
-    <div class="mt-6">
-      <img src="رابط_الصورة_الولد_الكرتوني.png" alt="ولد كرتوني وطني" class="w-32 h-32 rounded-full border-4 border-white">
-    </div>
-
-    <!-- العبارة الوطنية -->
-    <p class="text-3xl mt-8">عِزّنا بِطَبْعِنَا 🇸🇦</p>
-  </header>
-
-  <!-- المربع الأخضر والأسود -->
-  <section class="flex justify-center my-6">
-    <div class="bg-gradient-to-r from-green-700 to-black text-white rounded-2xl p-8 w-11/12 md:w-2/3 text-center shadow-lg">
-      <h2 class="text-3xl font-bold mb-2">عِزّنا بِطَبْعِنَا 🇸🇦</h2>
-      <p class="text-lg">نادي الموهوبين - جمعية ريادة</p>
-    </div>
-  </section>
-
-  <!-- قسم الفعاليات -->
-  <section class="bg-white text-green-800 p-8 rounded-2xl m-6 shadow-lg">
-    <h2 class="text-3xl font-bold mb-6 text-center">فعاليات اليوم الوطني</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="p-4 bg-green-100 rounded-lg text-center font-semibold">مسابقة الموهوبين</div>
-      <div class="p-4 bg-green-100 rounded-lg text-center font-semibold">الأعمال الفنية الوطنية</div>
-      <div class="p-4 bg-green-100 rounded-lg text-center font-semibold">العروض المسرحية</div>
-      <div class="p-4 bg-green-100 rounded-lg text-center font-semibold">مشاركات الطلاب</div>
-    </div>
-  </section>
-
-  <!-- قسم الصور -->
-  <section class="p-6 m-6 rounded-2xl shadow-lg bg-green-800">
-    <h2 class="text-3xl font-bold mb-4 text-center text-white">صور اليوم الوطني</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-white h-32 rounded-lg"></div>
-      <div class="bg-white h-32 rounded-lg"></div>
-      <div class="bg-white h-32 rounded-lg"></div>
-      <div class="bg-white h-32 rounded-lg"></div>
-    </div>
-  </section>
-
-  <!-- الفوتر -->
-  <footer class="text-center py-6 mt-10 bg-green-900">
-    <p>© 2025 مدرسة عين جالوت – نادي الموهوبين</p>
-  </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
