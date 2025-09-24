@@ -1,0 +1,50 @@
+/* اللون الأساسي أخضر غامق */
+:root {
+    --main-green: #1B5E20;
+    --text-white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-green);
+    color: var(--text-white);
+    text-align: center;
+}
+
+header {
+    padding: 50px 20px;
+}
+
+.moving-words {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2rem;
+    margin: 50px 0;
+    animation: moveWords 10s linear infinite;
+}
+
+.moving-words span {
+    white-space: nowrap;
+}
+
+/* تحريك الكلمات */
+@keyframes moveWords {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+footer {
+    background-color: var(--main-green);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.logo-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
